@@ -12,6 +12,7 @@ const cli = meow(
     $ restaurant complete     - Mark order as completed
     $ restaurant pending      - View pending orders
     $ restaurant completed    - View completed orders
+    $ restaurant cancel       - Cancel a pending order
     $ restaurant summary      - View order summary
 `,
   { importMeta: import.meta }

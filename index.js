@@ -6,6 +6,7 @@ import viewOrders from './utils/viewOrders.js';
 import markCompleted from './utils/markCompleted.js';
 import viewPending from './utils/viewPending.js';
 import viewCompleted from './utils/viewCompleted.js';
+import cancelOrder from './utils/cancelOrder.js';
 import summary from './utils/summary.js';
 
 const run = async () => {
@@ -30,6 +31,9 @@ const run = async () => {
         case 'completed':
             viewCompleted();
             break;
+        case 'cancel':
+            cancelOrder();
+            break;            
         case 'summary':
             summary();
             break;
