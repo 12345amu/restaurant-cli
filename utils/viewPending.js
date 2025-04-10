@@ -17,7 +17,7 @@ const viewPending = () => {
 
     console.log(chalk.blue.bold('\n Pending Orders:\n'));
     pending.forEach((order, index) => {
-        console.log(`${index + 1}. ${order.quantity} x ${order.item} - ₹${order.total} (ID: ${order.id})`);
+        console.log(`${index + 1}. ${order.quantity} x ${order.item} - ₹${order.total} (ID: ${order.id}, ${order.table})`);
     });
 };
 

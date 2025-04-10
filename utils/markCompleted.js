@@ -22,7 +22,7 @@ const markCompleted = async () => {
             name: 'orderId',
             message: 'Select an order to mark as completed:',
             choices: pendingOrders.map(order => ({
-                name: `${order.quantity} x ${order.item} - ₹${order.total} (ID: ${order.id})`,
+                name: `${order.quantity} x ${order.item} - ₹${order.total} (ID: ${order.id}, ${order.table})`,
                 value: order.id
             }))
         }

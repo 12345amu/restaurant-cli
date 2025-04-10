@@ -1,6 +1,9 @@
 import inquirer from 'inquirer';
 import fs from 'fs-extra';
 import chalk from 'chalk';
+import uniqid from 'uniqid';
+import { table } from 'console';
+import symbols from 'log-symbols';
 
 const menu = [
     { id: 1, name: 'Pizza', price: 200 },
@@ -11,7 +14,13 @@ const menu = [
 ];
 
 const placeOrder = async () => {
-    const { itemId, quantity } = await inquirer.prompt([
+    const { tableNumber , itemId, quantity } = await inquirer.prompt([
+        {
+            type: 'input',
+            name: 'tableNumber',
+            message: 'Enter your table number',
+            validate: value => value.trim() !== '' ? true : 'Please enter a valid table number'
+        },
         {
             type: 'list',
             name: 'itemId',
@@ -35,7 +44,8 @@ const placeOrder = async () => {
     }
 
     const newOrder = {
-        id: Date.now(),
+        id: uniqid(),
+        table:`Table ${tableNumber}`,
         item: selectedItem.name,
         quantity,
         total,
@@ -45,7 +55,7 @@ const placeOrder = async () => {
     orders.push(newOrder);
     fs.writeJsonSync('orders.json', orders, { spaces: 2 });
 
-    console.log(chalk.green(`\n Order placed: ${quantity} x ${selectedItem.name} (₹${total})`));
+    console.log(symbols.success, chalk.green(`\n Order placed: ${quantity} x ${selectedItem.name} (₹${total})`));
 };
 
 export default placeOrder;
