@@ -38,10 +38,10 @@ const placeOrder = async () => {
     const selectedItem = menu.find(item => item.id === itemId);
     const total = selectedItem.price * quantity;
 
-    let orders = [];
-    if (fs.existsSync('orders.json')) {
-        orders = fs.readJsonSync('orders.json');
-    }
+    // let orders = [];
+    // if (fs.existsSync('orders.json')) {
+    //     orders = fs.readJsonSync('orders.json');
+    // }
 
     const newOrder = {
         id: uniqid(),
@@ -51,6 +51,10 @@ const placeOrder = async () => {
         total,
         status: 'pending'
     };
+
+    const today = new Date().toISOString().split('T')[0];
+    const ordersDir = path.join(__dirname, '..', 'orders');
+    const filePath = path.join(ordersDir, `orders-${today}.json`);
 
     orders.push(newOrder);
     fs.writeJsonSync('orders.json', orders, { spaces: 2 });
