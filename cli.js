@@ -15,6 +15,8 @@ const cli = meow(
     $ restaurant cancel       - Cancel a pending order
     $ restaurant summary      - View order summary
     $ restaurant search       - Search orders by item name
+    $ restaurant report       - Show today's sales report
+
 `,
   { importMeta: import.meta }
 );

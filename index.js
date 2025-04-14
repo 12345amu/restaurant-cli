@@ -9,6 +9,7 @@ import viewCompleted from './utils/viewCompleted.js';
 import cancelOrder from './utils/cancelOrder.js';
 import summary from './utils/summary.js';
 import searchOrdersByItem from './utils/searchOrdersByItem.js';
+import dailyReport from './utils/dailyReport.js';
 
 const run = async () => {
     const [command] = cli.input;
@@ -40,6 +41,9 @@ const run = async () => {
             break;
         case 'search':
             searchOrdersByItem();
+            break;
+        case 'report':
+            dailyReport();
             break;
         default:
             console.log('! Invalid command. Run: restaurant --help');
