@@ -16,6 +16,7 @@ const cli = meow(
     $ restaurant summary      - View order summary
     $ restaurant search       - Search orders by item name
     $ restaurant report       - Show today's sales report
+    $ restaurant generate-bill  - Generate and save bills for completed tables
 
 `,
   { importMeta: import.meta }

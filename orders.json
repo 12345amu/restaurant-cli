@@ -70,5 +70,23 @@
     "total": 100,
     "status": "cancelled",
     "date": "2025-04-14T13:12:22.623Z"
+  },
+  {
+    "id": "50d06hicm9i9w2pr",
+    "table": "Table 5",
+    "item": "Pizza",
+    "quantity": 1,
+    "total": 200,
+    "status": "cancelled",
+    "date": "2025-04-15T09:00:55.358Z"
+  },
+  {
+    "id": "50d06gr8m9ibkbg9",
+    "table": "Table 3",
+    "item": "Noodles",
+    "quantity": 1,
+    "total": 120,
+    "status": "cancelled",
+    "date": "2025-04-15T09:47:46.040Z"
   }
 ]

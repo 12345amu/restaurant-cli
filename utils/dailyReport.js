@@ -1,46 +1,65 @@
 import fs from 'fs-extra';
 import chalk from 'chalk';
 import symbols from 'log-symbols';
+import inquirer from 'inquirer';
 
-const dailyReport =  () => {
+const dailyReport =  async() => {
     if (!fs.existsSync('orders.json')) {
         console.log(symbols.error, chalk.red('\n No orders found.'));
         return;
     }
 
     const orders = fs.readJsonSync('orders.json');
-    const today = new Date().toISOString().split('T')[0];
+    // const today = new Date().toISOString().split('T')[0];
 
-    const todayOrders = orders.filter(order => {
-        const orderDate = order.date ? order.date.split('T')[0] : null;
-        return orderDate === today;
-    });
+    const {date } = await inquirer.prompt([
+        {
+            type: 'input',
+            name: 'date',
+            message: 'Enter the date of the report (YYYY-MM-DD):',
+            validate: (input) => {
+                const isValidate = /^\d{4}-\d{2}-\d{2}$/.test(input);
+                return isValidate ? true : 'Please enter a valid date (YYYY-MM-DD)';
+                }
+            }
+        ]);
+         const selectedDate = new Date(date);
+         if(isNaN(selectedDate)) {
+            console.log(symbols.error, chalk.red('\n Invalid date format.'));
+            return;
+         }
+         const dateString = selectedDate.toISOString().split('T')[0];
+         const filteredOrders = orders.filter(order =>{
+            const orderDate = order.date ? order.date.split('T')[0] :null;
+            return orderDate === dateString;
+        });
 
-    if (todayOrders.length === 0) {
-        console.log(symbols.warning, chalk.yellow('\n No sales for today.'));
-        return;
-    }
-
-    const totalEarnings = todayOrders.reduce((acc, curr) => acc + curr.total, 0);
-
-    const itemSummary = {};
-
-    todayOrders.forEach(order => {
-        if (!itemSummary[order.item]) {
-            itemSummary[order.item] = { quantity: 0, revenue: 0 };
+        if (filteredOrders.length === 0) {
+            console.log(symbols.warning, chalk.yellow('\n No orders found for the date ${dateString}.'));
+            return;
         }
-        itemSummary[order.item].quantity += order.quantity;
-        itemSummary[order.item].revenue += order.total;
-    });
+            
+        console.log(chalk.blue.bold(`\n Daily Report for ${dateString}:`));
 
-    console.log(chalk.blue.bold(`\n  Daily Sales Report - ${today} \n`)); 
-    console.log(chalk.green(`Total Orders: ${todayOrders.length}`));
-    console.log(chalk.green(`Total Earnings: ₹${totalEarnings}\n`));
+        filteredOrders.forEach((order, index) => {
+            const statusColor = order.status === 'cancelled'
+            ? chalk.red
+            : order.status === 'completed'
+            ? chalk.green
+            : chalk.yellow;
 
-    console.log(chalk.cyan(`Item-wise Summary:`));
-    for (const [item, summary] of Object.entries(itemSummary)) {
-        console.log(`- ${item}: ${summary.quantity} sold | ₹${summary.revenue}`);
-    }
-};
+            console.log(
+            `${index + 1}. ${order.quantity} * ${order.item} - ${order.total} [${statusColor(order.status)}] (ID: ${order.id}, Table: ${order.table})`
+            );
+        });
+                
+        const totalAmount = filteredOrders
+        .filter(order => order.status !== 'cancelled')
+        .reduce((sum, order) => sum + order.total, 0);
+
+        console.log(chalk.green(`\n Total Amount (excluding cancelled): ${totalAmount}`));
+
+    };
+
 
 export default dailyReport;
