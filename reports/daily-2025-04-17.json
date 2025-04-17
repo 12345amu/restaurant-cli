@@ -1,0 +1,9 @@
+{
+  "date": "2025-04-17",
+  "totalOrders": 4,
+  "totalIncome": 1000,
+  "cancelledCount": 0,
+  "itemCount": {
+    "Pizza": 5
+  }
+}

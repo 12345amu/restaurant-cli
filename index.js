@@ -11,7 +11,8 @@ import summary from './utils/summary.js';
 import searchOrdersByItem from './utils/searchOrdersByItem.js';
 import dailyReport from './utils/dailyReport.js';
 import generateBill from './utils/generateBill.js';
-
+import { displayTableStatus } from './utils/tableStatus.js';
+import deleteOrder from './utils/deleteOrder.js';
 
 const run = async () => {
     const [command] = cli.input;
@@ -50,6 +51,9 @@ const run = async () => {
         case 'generate-bill':
             generateBill();
             break;
+       
+        
+    
         default:
             console.log('! Invalid command. Run: restaurant --help');
     }

@@ -1,0 +1,12 @@
+{
+  "date": "2025-04-11",
+  "totalOrders": 5,
+  "totalIncome": 3700,
+  "cancelledCount": 0,
+  "itemCount": {
+    "Pizza": 8,
+    "Noodles": 5,
+    "Biryani": 5,
+    "Coke": 5
+  }
+}

@@ -1,3 +1,4 @@
 Bill for Table: Table 1
 1. 2 x Pizza = ₹400
-Total Amount: ₹400
+2. 1 x Pizza = ₹200
+Total Amount: ₹600
