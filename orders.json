@@ -104,7 +104,7 @@
     "item": "Pizza",
     "quantity": 1,
     "total": 200,
-    "status": "pending",
+    "status": "completed",
     "date": "2025-04-16T17:39:29.458Z"
   },
   {
@@ -151,5 +151,32 @@
     "total": 200,
     "status": "completed",
     "date": "2025-04-17T03:11:21.909Z"
+  },
+  {
+    "id": "50d06li4m9lecozm",
+    "table": "Table 3",
+    "item": "Pizza",
+    "quantity": 3,
+    "total": 600,
+    "status": "completed",
+    "date": "2025-04-17T13:29:07.713Z"
+  },
+  {
+    "id": "50d06hwgm9lecyka",
+    "table": "Table 3",
+    "item": "Biryani",
+    "quantity": 3,
+    "total": 750,
+    "status": "pending",
+    "date": "2025-04-17T13:29:20.121Z"
+  },
+  {
+    "id": "50d06lncm9leeiqe",
+    "table": "Table 2",
+    "item": "Coke",
+    "quantity": 3,
+    "total": 150,
+    "status": "pending",
+    "date": "2025-04-17T13:30:32.917Z"
   }
 ]
