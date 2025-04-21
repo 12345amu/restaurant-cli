@@ -1,3 +1,8 @@
 Bill for Table: Table 5
 1. 5 x Noodles = ₹600
-Total Amount: ₹600
+2. 2 x Coke = ₹118
+
+Subtotal: ₹718
+GST (18%): ₹129.24
+Total Amount: ₹847.24
+Payment Method: Cash

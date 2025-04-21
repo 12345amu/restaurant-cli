@@ -18,7 +18,7 @@ const cli = meow(
     $ restaurant report       - Show today's sales report
     $ restaurant generate-bill  - Generate and save bills for completed tables
     $ restaurant table-status     - View current table statuses
- 
+    
 
 
 `,

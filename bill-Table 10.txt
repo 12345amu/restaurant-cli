@@ -1,0 +1,8 @@
+Bill for Table: Table 10
+1. 3 x Biryani = ₹885
+2. 3 x Coke = ₹177
+
+Subtotal: ₹1062
+GST (18%): ₹191.16
+Total Amount: ₹1253.16
+Payment Method: Cash

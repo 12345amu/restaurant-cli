@@ -1,3 +1,10 @@
 Bill for Table: Table 3
 1. 1 x Pizza = ₹200
-Total Amount: ₹200
+2. 3 x Pizza = ₹600
+3. 3 x Biryani = ₹750
+4. 1 x Pizza = ₹236
+
+Subtotal: ₹1786
+GST (18%): ₹321.48
+Total Amount: ₹2107.48
+Payment Method: Card

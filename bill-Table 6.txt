@@ -1,3 +1,7 @@
 Bill for Table: Table 6
 1. 5 x Biryani = ₹1250
-Total Amount: ₹1250
+
+Subtotal: ₹1250
+GST (18%): ₹225
+Total Amount: ₹1475
+Payment Method: UPI

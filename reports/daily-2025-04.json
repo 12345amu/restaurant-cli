@@ -1,0 +1,16 @@
+{
+  "date": "2025-04",
+  "totalOrders": 23,
+  "totalIncome": 8732,
+  "baseAmount": 7400,
+  "gstAmount": 1332,
+  "gstRate": 18,
+  "cancelledCount": 4,
+  "itemCount": {
+    "Noodles": 7,
+    "Biryani": 13,
+    "Burger": 2,
+    "Pizza": 17,
+    "Coke": 12
+  }
+}

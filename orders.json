@@ -6,7 +6,8 @@
     "quantity": 5,
     "total": 600,
     "status": "completed",
-    "date": "2025-04-11T11:28:54.205Z"
+    "date": "2025-04-11T11:28:54.205Z",
+    "paymentMethod": "Cash"
   },
   {
     "id": "50d06df8m9crzyls",
@@ -15,7 +16,8 @@
     "quantity": 5,
     "total": 1250,
     "status": "completed",
-    "date": "2025-04-11T12:41:12.687Z"
+    "date": "2025-04-11T12:41:12.687Z",
+    "paymentMethod": "UPI"
   },
   {
     "id": "50d06814m9h3f3t2",
@@ -24,7 +26,8 @@
     "quantity": 2,
     "total": 300,
     "status": "completed",
-    "date": "2025-04-14T13:11:59.749Z"
+    "date": "2025-04-14T13:11:59.749Z",
+    "paymentMethod": "Card"
   },
   {
     "id": "50d063ssm9h3fewk",
@@ -33,7 +36,8 @@
     "quantity": 2,
     "total": 500,
     "status": "completed",
-    "date": "2025-04-14T13:12:14.131Z"
+    "date": "2025-04-14T13:12:14.131Z",
+    "paymentMethod": "Card"
   },
   {
     "id": "50d06c2gm9h3flgg",
@@ -69,7 +73,8 @@
     "quantity": 2,
     "total": 400,
     "status": "completed",
-    "date": "2025-04-16T12:36:47.562Z"
+    "date": "2025-04-16T12:36:47.562Z",
+    "paymentMethod": "Cash"
   },
   {
     "id": "50d06jy4m9jx1rqs",
@@ -78,7 +83,8 @@
     "quantity": 2,
     "total": 240,
     "status": "completed",
-    "date": "2025-04-16T12:36:58.419Z"
+    "date": "2025-04-16T12:36:58.419Z",
+    "paymentMethod": "Cash"
   },
   {
     "id": "50d06k0sm9jx1yz0",
@@ -87,7 +93,8 @@
     "quantity": 2,
     "total": 100,
     "status": "completed",
-    "date": "2025-04-16T12:37:07.787Z"
+    "date": "2025-04-16T12:37:07.787Z",
+    "paymentMethod": "Cash"
   },
   {
     "id": "50d06280m9jx27n9",
@@ -105,7 +112,8 @@
     "quantity": 1,
     "total": 200,
     "status": "completed",
-    "date": "2025-04-16T17:39:29.458Z"
+    "date": "2025-04-16T17:39:29.458Z",
+    "paymentMethod": "Cash"
   },
   {
     "id": "50d064vom9cpb7pg",
@@ -114,7 +122,8 @@
     "quantity": 2,
     "total": 400,
     "status": "completed",
-    "date": "2025-04-11T11:25:58.851Z"
+    "date": "2025-04-11T11:25:58.851Z",
+    "paymentMethod": "UPI"
   },
   {
     "id": "50d06fbgm9kqt6qz",
@@ -123,7 +132,8 @@
     "quantity": 2,
     "total": 400,
     "status": "completed",
-    "date": "2025-04-17T02:30:06.442Z"
+    "date": "2025-04-17T02:30:06.442Z",
+    "paymentMethod": "UPI"
   },
   {
     "id": "50d06m6gm9kvucmi",
@@ -132,7 +142,8 @@
     "quantity": 1,
     "total": 200,
     "status": "completed",
-    "date": "2025-04-17T04:50:58.793Z"
+    "date": "2025-04-17T04:50:58.793Z",
+    "paymentMethod": "UPI"
   },
   {
     "id": "50d06bhgm9kqvo96",
@@ -141,7 +152,8 @@
     "quantity": 1,
     "total": 200,
     "status": "completed",
-    "date": "2025-04-17T02:32:02.441Z"
+    "date": "2025-04-17T02:32:02.441Z",
+    "paymentMethod": "Cash"
   },
   {
     "id": "50d06g3sm9ksa8ty",
@@ -150,7 +162,8 @@
     "quantity": 1,
     "total": 200,
     "status": "completed",
-    "date": "2025-04-17T03:11:21.909Z"
+    "date": "2025-04-17T03:11:21.909Z",
+    "paymentMethod": "Card"
   },
   {
     "id": "50d06li4m9lecozm",
@@ -159,7 +172,8 @@
     "quantity": 3,
     "total": 600,
     "status": "completed",
-    "date": "2025-04-17T13:29:07.713Z"
+    "date": "2025-04-17T13:29:07.713Z",
+    "paymentMethod": "Card"
   },
   {
     "id": "50d06hwgm9lecyka",
@@ -167,8 +181,9 @@
     "item": "Biryani",
     "quantity": 3,
     "total": 750,
-    "status": "pending",
-    "date": "2025-04-17T13:29:20.121Z"
+    "status": "completed",
+    "date": "2025-04-17T13:29:20.121Z",
+    "paymentMethod": "Card"
   },
   {
     "id": "50d06lncm9leeiqe",
@@ -176,7 +191,149 @@
     "item": "Coke",
     "quantity": 3,
     "total": 150,
+    "status": "completed",
+    "date": "2025-04-17T13:30:32.917Z",
+    "paymentMethod": "Cash"
+  },
+  {
+    "id": "50d06ccm9lnois3",
+    "table": "Table 1",
+    "item": "Pizza",
+    "quantity": 1,
+    "subtotal": 200,
+    "gstPercentage": 18,
+    "gstAmount": 36,
+    "total": 236,
+    "status": "completed",
+    "date": "2025-04-17T17:50:16.083Z",
+    "paymentMethod": "UPI"
+  },
+  {
+    "id": "50d06mmwm9lpn14x",
+    "table": "Table 2",
+    "item": "Coke",
+    "quantity": 2,
+    "subtotal": 100,
+    "gstPercentage": 18,
+    "gstAmount": 18,
+    "total": 118,
+    "status": "completed",
+    "date": "2025-04-17T18:45:05.792Z",
+    "paymentMethod": "Cash"
+  },
+  {
+    "id": "50d06jwcm9lpx83u",
+    "table": "Table 3",
+    "item": "Pizza",
+    "quantity": 1,
+    "subtotal": 200,
+    "gstPercentage": 18,
+    "gstAmount": 36,
+    "total": 236,
+    "status": "completed",
+    "date": "2025-04-17T18:53:01.385Z",
+    "paymentMethod": "Card"
+  },
+  {
+    "id": "50d06bz8m9lpxles",
+    "table": "Table 2",
+    "item": "Pizza",
+    "quantity": 2,
+    "subtotal": 400,
+    "gstPercentage": 18,
+    "gstAmount": 72,
+    "total": 472,
+    "status": "completed",
+    "date": "2025-04-17T18:53:18.627Z",
+    "paymentMethod": "Cash"
+  },
+  {
+    "id": "50d06ixkm9lq5oce",
+    "table": "Table 5",
+    "item": "Coke",
+    "quantity": 2,
+    "subtotal": 100,
+    "gstPercentage": 18,
+    "gstAmount": 18,
+    "total": 118,
+    "status": "completed",
+    "date": "2025-04-17T18:59:35.677Z",
+    "paymentMethod": "Cash"
+  },
+  {
+    "id": "50d06gq8m9qsj4bc",
+    "table": "Table 10",
+    "item": "Biryani",
+    "quantity": 3,
+    "subtotal": 750,
+    "gstPercentage": 18,
+    "gstAmount": 135,
+    "total": 885,
+    "status": "completed",
+    "date": "2025-04-21T08:04:53.015Z",
+    "paymentMethod": "Cash"
+  },
+  {
+    "id": "50d06h1om9qsjhws",
+    "table": "Table 10",
+    "item": "Coke",
+    "quantity": 3,
+    "subtotal": 150,
+    "gstPercentage": 18,
+    "gstAmount": 27,
+    "total": 177,
+    "status": "completed",
+    "date": "2025-04-21T08:05:10.635Z",
+    "paymentMethod": "Cash"
+  },
+  {
+    "id": "50d06dw4m9qszfu7",
+    "table": "Table 1",
+    "item": "Pizza",
+    "quantity": 2,
+    "subtotal": 400,
+    "gstPercentage": 18,
+    "gstAmount": 72,
+    "total": 472,
+    "status": "completed",
+    "date": "2025-04-21T08:17:34.446Z",
+    "paymentMethod": "UPI"
+  },
+  {
+    "id": "50d064qgm9qszqky",
+    "table": "Table 1",
+    "item": "Coke",
+    "quantity": 2,
+    "subtotal": 100,
+    "gstPercentage": 18,
+    "gstAmount": 18,
+    "total": 118,
+    "status": "completed",
+    "date": "2025-04-21T08:17:48.369Z",
+    "paymentMethod": "UPI"
+  },
+  {
+    "id": "50d06hgom9qt1xus",
+    "table": "Table 1",
+    "item": "Burger",
+    "quantity": 2,
+    "subtotal": 300,
+    "gstPercentage": 18,
+    "gstAmount": 54,
+    "total": 354,
+    "status": "cancelled",
+    "date": "2025-04-21T08:19:31.107Z"
+  },
+  {
+    "id": "50d06b1om9r3491n",
+    "table": "Table 2",
+    "item": "Paneer Tikka",
+    "quantity": 2,
+    "subtotal": 360,
+    "gstPercentage": 18,
+    "gstAmount": 64.8,
+    "total": 424.8,
     "status": "pending",
-    "date": "2025-04-17T13:30:32.917Z"
+    "date": "2025-04-21T13:01:15.082Z"
   }
 ]

@@ -1,3 +1,14 @@
 Bill for Table: Table 2
-1. 1 x Pizza = ₹200
-Total Amount: ₹200
+1. 2 x Pizza = ₹400
+2. 2 x Noodles = ₹240
+3. 2 x Coke = ₹100
+4. 1 x Pizza = ₹200
+5. 1 x Pizza = ₹200
+6. 3 x Coke = ₹150
+7. 2 x Coke = ₹118
+8. 2 x Pizza = ₹472
+
+Subtotal: ₹1880
+GST (18%): ₹338.4
+Total Amount: ₹2218.4
+Payment Method: Cash

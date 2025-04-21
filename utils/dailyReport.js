@@ -8,6 +8,8 @@ import ora from 'ora';
 import pkg from 'enquirer';
 const { Input } = pkg;
 
+const GST_RATE = 18;
+
 const dailyReport = async (reportDate = null) => {
     
     console.log(
@@ -66,10 +68,16 @@ const dailyReport = async (reportDate = null) => {
         }
     });
 
+    const gstAmount = (totalIncome * GST_RATE) / (100 + GST_RATE);
+    const baseAmount = totalIncome - gstAmount;
+
     const report = {
         date: reportDate,
         totalOrders,
         totalIncome,
+        baseAmount,
+        gstAmount,
+        gstRate: GST_RATE,
         cancelledCount,
         itemCount
     };
@@ -83,8 +91,12 @@ const dailyReport = async (reportDate = null) => {
     
     console.log(chalk.green.bold(`\n Daily Report for ${reportDate}`)); 
     console.log(`${chalk.blue(' Total Orders')}:        ${totalOrders}`); 
-    console.log(`${chalk.blue(' Total Income')}:       ₹${totalIncome}`); 
+    console.log(`${chalk.blue(' Total Income')}:       ${totalIncome}`); 
     console.log(`${chalk.blue(' Cancelled Orders')}:   ${cancelledCount}`); 
+    console.log(`${chalk.blue(' Total Income (incl. GST)')}: ${totalIncome.toFixed(2)}`);
+    console.log(`${chalk.gray(' Base Amount (excl. GST)')}:  ${baseAmount.toFixed(2)}`);
+    console.log(`${chalk.gray(` GST @${GST_RATE}%`)}:        ${gstAmount.toFixed(2)}`);
+
 
      
     console.log(chalk.gray('\n Items Sold:')); 

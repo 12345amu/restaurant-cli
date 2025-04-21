@@ -1,9 +1,12 @@
 {
   "date": "2025-04-17",
-  "totalOrders": 4,
-  "totalIncome": 1000,
+  "totalOrders": 5,
+  "totalIncome": 1600,
+  "baseAmount": 1355.9322033898304,
+  "gstAmount": 244.0677966101695,
+  "gstRate": 18,
   "cancelledCount": 0,
   "itemCount": {
-    "Pizza": 5
+    "Pizza": 8
   }
 }

@@ -1,4 +1,12 @@
 Bill for Table: Table 1
 1. 2 x Pizza = ₹400
-2. 1 x Pizza = ₹200
-Total Amount: ₹600
+2. 2 x Pizza = ₹400
+3. 1 x Pizza = ₹200
+4. 1 x Pizza = ₹236
+5. 2 x Pizza = ₹472
+6. 2 x Coke = ₹118
+
+Subtotal: ₹1826
+GST (18%): ₹328.68
+Total Amount: ₹2154.68
+Payment Method: UPI

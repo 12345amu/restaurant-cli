@@ -1,4 +1,8 @@
 Bill for Table: Table 7
 1. 2 x Burger = ₹300
 2. 2 x Biryani = ₹500
-Total Amount: ₹800
+
+Subtotal: ₹800
+GST (18%): ₹144
+Total Amount: ₹944
+Payment Method: Card

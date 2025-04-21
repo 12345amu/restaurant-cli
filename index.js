@@ -12,9 +12,13 @@ import searchOrdersByItem from './utils/searchOrdersByItem.js';
 import dailyReport from './utils/dailyReport.js';
 import generateBill from './utils/generateBill.js';
 import { displayTableStatus } from './utils/tableStatus.js';
+import collectFeedback from './utils/feedback.js';
+import welcome from './utils/welcome.js';
 
 
 const run = async () => {
+    welcome();
+
     const [command] = cli.input;
 
     switch (command) {
@@ -49,16 +53,17 @@ const run = async () => {
             dailyReport();
             break;
         case 'generate-bill':
-            generateBill();
+            await generateBill();         
+            await collectFeedback();      
             break;
         case 'table-status': 
             displayTableStatus(); 
             break;
-        
     
         default:
             console.log('! Invalid command. Run: restaurant --help');
-    }
+    } 
+   
 };
 
 run();
