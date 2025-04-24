@@ -16,10 +16,10 @@ const cli = meow(
     $ restaurant summary      - View order summary
     $ restaurant search       - Search orders by item name
     $ restaurant report       - Show today's sales report
-    $ restaurant generate-bill  - Generate and save bills for completed tables
-    $ restaurant table-status     - View current table statuses
-    
-
+    $ restaurant generate-bill- Generate and save bills for completed tables
+    $ restaurant table-status - View current table statuses
+    $ restaurant reserve      - Reserve a table for a specific time
+    $ restaurant order-online - Place an online order for delivery or pickup
 
 `,
   { importMeta: import.meta }

@@ -14,7 +14,8 @@ import generateBill from './utils/generateBill.js';
 import { displayTableStatus } from './utils/tableStatus.js';
 import collectFeedback from './utils/feedback.js';
 import welcome from './utils/welcome.js';
-
+import reserveTable from './utils/reserveTable.js';
+import orderOnline from './utils/orderOnline.js'; 
 
 const run = async () => {
     welcome();
@@ -59,7 +60,14 @@ const run = async () => {
         case 'table-status': 
             displayTableStatus(); 
             break;
-    
+        case 'reserve':
+            await reserveTable();
+            break;
+        case 'order-online':
+            await orderOnline();
+            break;
+            
+
         default:
             console.log('! Invalid command. Run: restaurant --help');
     } 

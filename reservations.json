@@ -1,0 +1,28 @@
+[
+  {
+    "id": "res-50d06he8m9tme4eo",
+    "name": "amulya",
+    "people": 2,
+    "dateTime": "2025-04-24 8:00PM\t",
+    "status": "booked",
+    "createdAt": "2025-04-23T07:36:20.687Z"
+  },
+  {
+    "id": "res-50d069dcm9tmp1o3",
+    "name": "amulya",
+    "people": 2,
+    "dateTime": "2025-04-25 8:00P:00PM",
+    "tableNumber": "2",
+    "status": "booked",
+    "createdAt": "2025-04-23T07:44:50.354Z"
+  },
+  {
+    "id": "res-50d0622om9tmpv9q",
+    "name": "tom",
+    "people": 2,
+    "dateTime": "2025-04-25 8:00PM\t",
+    "tableNumber": "2",
+    "status": "booked",
+    "createdAt": "2025-04-23T07:45:28.717Z"
+  }
+]
