@@ -78,5 +78,203 @@
     "totalAmount": 230,
     "status": "pending",
     "orderedAt": "2025-04-23T12:51:43.671Z"
+  },
+  {
+    "orderId": "ord-50d06458m9uwyovf",
+    "name": "jerry",
+    "mobile": "9876543261",
+    "address": "vizag",
+    "items": [
+      {
+        "name": "Paneer Tikka",
+        "price": 180,
+        "quantity": 1,
+        "total": 180
+      }
+    ],
+    "baseAmount": 152.54237288135593,
+    "gstAmount": 27.45762711864407,
+    "gstRate": 18,
+    "totalAmount": 180,
+    "status": "pending",
+    "orderedAt": "2025-04-24T05:20:02.666Z"
+  },
+  {
+    "orderId": "ord-50d0633wm9ux0b55",
+    "name": "jerry",
+    "mobile": "9876543218",
+    "address": "vizag",
+    "items": [
+      {
+        "name": "Paneer Tikka",
+        "price": 180,
+        "quantity": 1,
+        "total": 180
+      }
+    ],
+    "baseAmount": 152.54237288135593,
+    "gstAmount": 27.45762711864407,
+    "gstRate": 18,
+    "totalAmount": 180,
+    "status": "pending",
+    "orderedAt": "2025-04-24T05:21:18.184Z"
+  },
+  {
+    "orderId": "ord-50d068rwm9ux5t4p",
+    "name": "micky",
+    "mobile": "9875648374",
+    "address": "guntur",
+    "items": [
+      {
+        "name": "Virgin Mojito",
+        "price": 90,
+        "quantity": 1,
+        "total": 90
+      },
+      {
+        "name": "Veg Manchurian",
+        "price": 160,
+        "quantity": 1,
+        "total": 160
+      }
+    ],
+    "subtotal": 250,
+    "gstPercentage": 5,
+    "gstAmount": 12.5,
+    "finalAmount": 262.5,
+    "status": "pending",
+    "orderedAt": "2025-04-24T05:25:34.776Z"
+  },
+  {
+    "orderId": "ord-50d064rom9uxbswx",
+    "name": "chotu",
+    "mobile": "9876543726",
+    "address": "guntur",
+    "items": [
+      {
+        "name": "Chicken Biryani",
+        "price": 250,
+        "quantity": 1,
+        "total": 250
+      }
+    ],
+    "subtotal": 250,
+    "gstPercentage": 5,
+    "gstAmount": 12.5,
+    "finalAmount": 262.5,
+    "status": "pending",
+    "orderedAt": "2025-04-24T05:30:14.432Z"
+  },
+  {
+    "orderId": "ord-50d064rom9uxbswx",
+    "name": "chotu",
+    "mobile": "9876543726",
+    "address": "guntur",
+    "items": [
+      {
+        "name": "Chicken Biryani",
+        "price": 250,
+        "quantity": 1,
+        "total": 250
+      }
+    ],
+    "subtotal": 250,
+    "gstPercentage": 5,
+    "gstAmount": 12.5,
+    "finalAmount": 262.5,
+    "status": "completed",
+    "orderedAt": "2025-04-24T05:30:14.432Z"
+  },
+  {
+    "orderId": "ord-50d06y0m9uxd86v",
+    "name": "pwt",
+    "mobile": "9876643654",
+    "address": "hyd",
+    "items": [
+      {
+        "name": "Coke",
+        "price": 50,
+        "quantity": 1,
+        "total": 50
+      }
+    ],
+    "subtotal": 50,
+    "gstPercentage": 5,
+    "gstAmount": 2.5,
+    "finalAmount": 52.5,
+    "status": "pending",
+    "orderedAt": "2025-04-24T05:31:20.886Z"
+  },
+  {
+    "orderId": "ord-50d06y0m9uxd86v",
+    "name": "pwt",
+    "mobile": "9876643654",
+    "address": "hyd",
+    "items": [
+      {
+        "name": "Coke",
+        "price": 50,
+        "quantity": 1,
+        "total": 50
+      }
+    ],
+    "subtotal": 50,
+    "gstPercentage": 5,
+    "gstAmount": 2.5,
+    "finalAmount": 52.5,
+    "status": "pending",
+    "orderedAt": "2025-04-24T05:31:20.886Z"
+  },
+  {
+    "orderId": "ord-50d06bx8m9v2kqdo",
+    "name": "adhi",
+    "mobile": "9876564738",
+    "address": "guntur",
+    "items": [
+      {
+        "name": "Paneer Tikka",
+        "price": 180,
+        "quantity": 2,
+        "total": 360
+      },
+      {
+        "name": "Veg Biryani",
+        "price": 200,
+        "quantity": 2,
+        "total": 400
+      }
+    ],
+    "subtotal": 760,
+    "gstPercentage": 5,
+    "gstAmount": 38,
+    "finalAmount": 798,
+    "status": "pending",
+    "orderedAt": "2025-04-24T07:57:09.131Z"
+  },
+  {
+    "orderId": "ord-50d06bx8m9v2kqdo",
+    "name": "adhi",
+    "mobile": "9876564738",
+    "address": "guntur",
+    "items": [
+      {
+        "name": "Paneer Tikka",
+        "price": 180,
+        "quantity": 2,
+        "total": 360
+      },
+      {
+        "name": "Veg Biryani",
+        "price": 200,
+        "quantity": 2,
+        "total": 400
+      }
+    ],
+    "subtotal": 760,
+    "gstPercentage": 5,
+    "gstAmount": 38,
+    "finalAmount": 798,
+    "status": "pending",
+    "orderedAt": "2025-04-24T07:57:09.131Z"
   }
 ]

@@ -24,5 +24,14 @@
     "tableNumber": "2",
     "status": "booked",
     "createdAt": "2025-04-23T07:45:28.717Z"
+  },
+  {
+    "id": "res-50d067w8m9v2j5g4",
+    "name": "abhi",
+    "people": 2,
+    "dateTime": "2025-04-28 8:00pm",
+    "tableNumber": "5",
+    "status": "booked",
+    "createdAt": "2025-04-24T07:55:55.347Z"
   }
 ]

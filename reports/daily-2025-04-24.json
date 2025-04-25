@@ -1,0 +1,13 @@
+{
+  "date": "2025-04-24",
+  "totalOrders": 2,
+  "totalIncome": 637.2,
+  "baseAmount": 540,
+  "gstAmount": 97.2,
+  "gstRate": 18,
+  "cancelledCount": 0,
+  "itemCount": {
+    "Paneer Tikka": 2,
+    "Virgin Mojito": 2
+  }
+}

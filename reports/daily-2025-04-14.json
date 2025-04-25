@@ -2,6 +2,9 @@
   "date": "2025-04-14",
   "totalOrders": 2,
   "totalIncome": 800,
+  "baseAmount": 677.9661016949152,
+  "gstAmount": 122.03389830508475,
+  "gstRate": 18,
   "cancelledCount": 1,
   "itemCount": {
     "Burger": 2,

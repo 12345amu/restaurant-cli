@@ -126,6 +126,11 @@ const orderOnline = async () => {
         0
     );
 
+    const gstPercentage = 5;
+    const gstAmount = +(totalAmount * gstPercentage / 100).toFixed(2);
+    const finalAmount = totalAmount + gstAmount;
+
+
     const order = {
         orderId,
         name,
@@ -137,7 +142,10 @@ const orderOnline = async () => {
             quantity: quantities[item.name],
             total: item.price * quantities[item.name]
         })),
-        totalAmount,
+        subtotal: totalAmount,
+        gstPercentage,
+        gstAmount,
+        finalAmount,
         status: 'pending',
         orderedAt: new Date().toISOString()
     };
@@ -156,8 +164,38 @@ const orderOnline = async () => {
     console.log(chalk.cyan(` Name       : ${name}`));
     console.log(chalk.cyan(` Contact    : ${mobile}`));
     console.log(chalk.cyan(` Address    : ${address}`));
-    console.log(chalk.cyan(` Total Amt  : ₹${totalAmount}\n`));
+    console.log(chalk.cyan(` Subtotal   : ₹${totalAmount}`));
+    console.log(chalk.cyan(` GST (${gstPercentage}%) : ₹${gstAmount}`));
+    console.log(chalk.cyan(` Final Amt  : ₹${finalAmount}\n`));
+
+// Ask if order has been delivered
+const { delivered } = await inquirer.prompt([
+    {
+        type: 'confirm',
+        name: 'delivered',
+        message: 'Has the customer received the order?',
+        default: true
+    }
+]);
+
+if (delivered) {
+    order.status = 'completed';
+    console.log(symbols.info, chalk.greenBright(`Order marked as completed.`));
+} else {
+    console.log(symbols.warning, chalk.yellow(`Order status remains pending.`));
+}
+
+// Save updated order
+
+if (fs.existsSync('onlineOrders.json')) {
+    onlineOrders = fs.readJsonSync('onlineOrders.json');
+}
+onlineOrders.push(order);
+fs.writeJsonSync('onlineOrders.json', onlineOrders, { spaces: 2 });
+
 };
+
+
 
 export default orderOnline;
 

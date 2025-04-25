@@ -7,8 +7,9 @@ Bill for Table: Table 2
 6. 3 x Coke = ₹150
 7. 2 x Coke = ₹118
 8. 2 x Pizza = ₹472
+9. 2 x Paneer Tikka = ₹424.8
 
-Subtotal: ₹1880
-GST (18%): ₹338.4
-Total Amount: ₹2218.4
+Subtotal: ₹2304.8
+GST (18%): ₹414.86400000000003
+Total Amount: ₹2719.664
 Payment Method: Cash
